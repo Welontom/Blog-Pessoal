@@ -12,6 +12,7 @@ Para os posts do blog, quero utilizar arquivos markdown (.md) e para isso foi ne
 ## Estado do projeto
 - O servidor *localhost* está funcioando, e criei uma rota inicial e uma página HTML para testes.
 - Testei a conversão de arquivos markdown, e consegui fazer funcionar. A partir de um arquivo markdown, consigo rodar o servidor e mostrar dentro de um arquivo HTML.
+- Rotas e esquema para acessar os posts do blog criado.
 
 ## Próximos passos
 - Definir qual serviço vou utilizar para hospedar o servidor
