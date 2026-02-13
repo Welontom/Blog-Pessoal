@@ -1,0 +1,9 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="card w-50 mx-auto mb-4 shadow-sm">
+    <div class="card-body">
+        {{ post | safe}}
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,9 @@
+.post-card {
+    display: flex;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
