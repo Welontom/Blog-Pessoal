@@ -1,10 +1,85 @@
 {% extends "template.html" %}
 {% block content %}
-<h1>Teste</h1>
-<div class="container w-25">
-    <div class="mx-auto">
-        {{ posts_list | safe}}
+<div class="container my-4">
+    <h1 class="text-center fw-bold mb-2">Sobre mim</h1>
+    <p class="text-center text-muted mb-4">
+        Um pouco sobre minha formação e Habilidades
+    </p>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-body p-4 p-md-5">
+
+                    <h4 class="fw-bold mb-3">Quem sou eu</h4>
+                    <p class="lh-lg">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius ab dicta soluta a voluptates eos fugiat fuga impedit vel? Totam quidem porro animi ullam repellendus in facilis officiis asperiores.
+                    </p>
+
+                    <h4 class="fw-bold mt-5 mb-3 section-title">Formação</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                        <strong>Ciência da Computação</strong><br>
+                        <span class="text-muted small">
+                        UVV • jan/2023 - dez/2026
+                        </span>
+                        </li>
+                    </ul>
+                    <h4 class="fw-bold mt-5 mb-3 section-title">Certificados</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                        <strong>CCNA: Introduction to Networks</strong><br>
+                        <span class="text-muted small">
+                        Cisco Network Academy • dez/2025
+                        </span>
+                        </li>
+                        <li class="mb-3">
+                        <strong>Python Essentials 1</strong><br>
+                        <span class="text-muted small">
+                        Cisco Network Academy • ago/2025
+                        </span>
+                        </li>
+                        <li class="mb-3">
+                        <strong>Git e GitHub: dominando controle de versão de código</strong><br>
+                        <span class="text-muted small">
+                        Alura • jan/2026
+                        </span>
+                        </li>
+                        <li class="mb-3">
+                        <strong>Flask: crie uma webapp com Python</strong><br>
+                        <span class="text-muted small">
+                        Alura • fev/2026
+                        </span>
+                        </li>
+                        <li class="mb-3">
+                        <strong>Flask: avançando no desenvolvimento web com Python</strong><br>
+                        <span class="text-muted small">
+                        Alura • fev/2026
+                        </span>
+                        </li>
+
+                        
+                    </ul>
+
+                <h4 class="fw-bold mt-5 mb-3 section-title">Habilidades</h4>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-primary">Python</span>
+                    <span class="badge bg-secondary">Flask</span>
+                    <span class="badge bg-success">SQL</span>
+                    <span class="badge bg-dark">Git</span>
+                    <span class="badge bg-info text-dark">HTML</span>
+                    <span class="badge bg-warning text-dark">Bootstrap</span>
+                </div>
+
+                <h4 class="fw-bold mt-5 mb-3 section-title">Contato</h4>
+                <p class="mb-1"> <i class="bi bi-envelope me-2"></i> Email: welingtoncbsjr@gmail.com</p>
+                <p class="mb-1"> <i class="bi bi-github me-2"></i> GitHub: <a href="https://github.com/welontom">github.com/welontom</a></p>
+                <p class="mb-1"> <i class="bi bi-linkedin me-2"></i> LinkedIn: <a href="https://www.linkedin.com/in/welington-junior-733814378">www.linkedin.com/in/welington-junior-733814378</a></p>
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
 {% endblock %}

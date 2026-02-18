@@ -1,0 +1,14 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="container my-4">
+    <h1 class="text-center fw-bold mb-2">Posts</h1>
+    <p class="text-center text-muted mb-4"> Artigos e anotações sobre computação</p>
+
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+        {{ posts_list | safe }}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

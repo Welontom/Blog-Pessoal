@@ -1,9 +1,16 @@
 {% extends "template.html" %}
 {% block content %}
-<div class="card w-50 mx-auto mb-4 shadow-sm">
-    <div class="card-body">
-        {{ post | safe}}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-body lh-lg">
+          {{ post | safe }}
+        </div>
+      </div>
     </div>
+  </div>
 </div>
+
 
 {% endblock %}

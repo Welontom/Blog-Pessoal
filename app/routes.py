@@ -4,12 +4,24 @@ from flask import render_template
 
 @app.route('/')
 def index():
-    print(show_posts())
+    return render_template('home.html')
+
+@app.route('/posts')
+def posts():
     posts_list = show_posts()
-    return render_template('home.html', posts_list=posts_list)
+    return render_template('posts.html', posts_list=posts_list)
 
 @app.route('/posts/<name>')
-def posts(name):
-    file_name = (name + '.md')
-    post = convert_to_html(f'app/posts/{file_name}')
-    return render_template('post.html',post=post)
+def post(name):
+    if name:
+        file_name = (name + '.md')
+        post = convert_to_html(f'app/posts/{file_name}')
+        return render_template('post.html',post=post)
+    else:
+        posts_list = show_posts()
+        return render_template('blog.html', posts_list=posts_list)
+
+
+@app.route('/portfólio')
+def portfolio():
+    return render_template('portfolio.html')

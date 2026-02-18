@@ -21,9 +21,12 @@ ou seja: A parte sequencial mais a parte paralela
 Aplicando uma fórmula na outra temos:
 
 $$
-S=\dfrac{T(1)}{B.T(1)+\dfrac{(1-B).T(1)}{N}} \Rightarrow S=\dfrac{1}{B+\dfrac{1-B}{N}}
+S=\dfrac{T(1)}{B.T(1)+\dfrac{(1-B).T(1)}{N}}
 $$
 
+$$
+S=\dfrac{1}{B+\dfrac{1-B}{N}}
+$$
 
 ---
 ### Exemplo 1:
