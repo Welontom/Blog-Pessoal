@@ -1,6 +1,7 @@
 from app import app
 from app.helpers import convert_to_html, show_posts
 from flask import render_template
+from app.projects import projetos
 
 @app.route('/')
 def index():
@@ -24,4 +25,4 @@ def post(name):
 
 @app.route('/portfólio')
 def portfolio():
-    return render_template('portfolio.html')
+    return render_template('portfolio.html', projetos=projetos)
