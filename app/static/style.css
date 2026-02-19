@@ -29,3 +29,14 @@
   border-radius: 2px;
 }
 
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: #2b2b2b;
+  text-align: justify;
+}
+
+.about-text strong {
+  font-weight: 600;
+  color: #000;
+}
