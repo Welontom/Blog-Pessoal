@@ -27,24 +27,3 @@ As VLANs permitem que o administrador segmente redes com base em fatores como *f
 ## VLANs em um ambiente de vários switches
 
 Os troncos permitem conectar dispositivos em uma mesma VLAN que estão em diferentes switches. É um link entre dois dispositivos de rede. 
-
-## Algumas perguntas para o chatgpt
-### Qual a diferença entre usar uma VLAN ou só segmentar a rede em subredes?
-
-A ideia-chave é: subrede é lógica (camada 3) VLAN é lógica + física (camada 2)
-
-Sub-redes (sem VLAN)
-- Funcionam na **Camada 3 (Rede – IP)**
-- Você divide a rede usando **endereçamento IP** (ex: `192.168.1.0/24`, `192.168.2.0/24`)
-- **Todos os dispositivos continuam no mesmo domínio de broadcast**, se estiverem no mesmo switch
-- A separação depende de **roteador** para comunicação entre sub-redes
-👉 Problema:  
-Mesmo com IPs diferentes, **broadcast continua espalhando** se não houver VLAN.
-
-VLAN (Virtual LAN)
-- Funcionam na **Camada 2 (Enlace)**    
-- Criam **redes logicamente separadas** dentro do mesmo switch
-- Cada VLAN é um **domínio de broadcast separado**
-- Pode usar **o mesmo switch físico** para várias redes isoladas
-👉 Vantagem:  
-Reduz broadcast, melhora desempenho e aumenta segurança.
