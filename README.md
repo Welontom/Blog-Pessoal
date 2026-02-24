@@ -1,5 +1,5 @@
 # Blog pessoal e Portfólio
- A ideia principal deste blog é compartilhar outros projetos pessoais e postar anotações dos meus estudos de computação para criar um acervo virtual e público das minhas ideias.
+ A ideia principal deste blog é compartilhar outros projetos pessoais e postar anotações dos meus estudos de computação para criar um acervo virtual e público das minhas ideias. O blog pode ser acessado em https://welontom.onrender.com/
 
 ## Tecnologias utilizadas no projeto
 
